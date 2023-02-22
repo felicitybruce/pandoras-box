@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "694775267495",
+    "project_id": "pandorasbox-20b93",
+    "storage_bucket": "pandorasbox-20b93.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:694775267495:android:f635234e2ec5ed22d21b82",
+        "android_client_info": {
+          "package_name": "com.example.pandorasbox"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "694775267495-r0r5ncgjvkbf1ropnllaih7sos11o9sp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoCZUwi3G9fkQtGBlgTkVeVljNPqo5Xhg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "694775267495-r0r5ncgjvkbf1ropnllaih7sos11o9sp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

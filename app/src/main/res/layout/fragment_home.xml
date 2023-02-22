@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <!-- RecyclerView to load posts -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/postsRv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/row_post"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+        <!-- Button to click to show more posts enumerate-->
+        <Button
+            android:id="@+id/loadMoreBtn"
+            android:text="Load More"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:textColor="#000" />
+
+        <Button
+            android:id="@+id/btn_log_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="40dp"
+            android:text="Log Out" />
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>
