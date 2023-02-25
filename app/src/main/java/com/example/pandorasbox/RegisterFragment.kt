@@ -58,7 +58,6 @@ class RegisterFragment : Fragment() {
 
     private fun firebaseSignUp() {
         // Disabling Register button so user can only click once - code not here
-
         fAuth.createUserWithEmailAndPassword(
             username.text.toString(),
             // Check if successful
@@ -68,6 +67,7 @@ class RegisterFragment : Fragment() {
                 // Use interface to call method and pass Home fragment
                 var navHome = activity as FragmentNavigation
                 navHome.navigateFrag(HomeFragment(), true)
+
             } else {
                 Toast.makeText(context, task.exception?.message, Toast.LENGTH_SHORT).show()
             }
@@ -114,7 +114,7 @@ class RegisterFragment : Fragment() {
 
                             // Register user to Firebase
                             firebaseSignUp()
-                            Toast.makeText(context, "Register Succesful", Toast.LENGTH_SHORT).show()
+                            //Toast.makeText(context, "Register Succesful", Toast.LENGTH_SHORT).show()
                         } else {
                             cnfPassword.setError("Password Doesn't Match", icon)
                         }
