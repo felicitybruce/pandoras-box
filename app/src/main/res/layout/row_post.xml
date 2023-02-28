@@ -5,7 +5,7 @@
     android:layout_marginBottom="5dp"
     android:background="@color/gold_light"
     android:padding="5dp">
-    
+
     <ImageButton
         android:id="@+id/moreBtn"
         android:layout_width="wrap_content"

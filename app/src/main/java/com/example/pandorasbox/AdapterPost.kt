@@ -77,10 +77,7 @@ class AdapterPost (
         holder.descriptionTv.text = document.text()
         holder.publishInfoTv.text = "By $authorName $formattedDate"
 
-
-
     }
-
 
     // View holder class to hold init UI views of row_posts.xml
     inner class HolderPost(itemView: View) : RecyclerView.ViewHolder(itemView) {
