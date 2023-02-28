@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#eee"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".HomeFragment">
 
@@ -13,14 +14,16 @@
         android:orientation="vertical">
 
     <!-- RecyclerView to load posts -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/postsRv"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:listitem="@layout/row_post"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
 
         <!-- Button to click to show more posts enumerate-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/postsRv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/row_post" />
+
         <Button
             android:id="@+id/loadMoreBtn"
             android:text="Load More"

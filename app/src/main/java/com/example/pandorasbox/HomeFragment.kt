@@ -18,11 +18,13 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        var view =  inflater.inflate(R.layout.fragment_home, container, false)
+        var view = inflater.inflate(R.layout.fragment_home, container, false)
 
         // CLicking on log out btn calls sign out method
         view.findViewById<Button>(R.id.btn_log_out).setOnClickListener {
             Firebase.auth.signOut()
+            var navLogin = activity as FragmentNavigation
+            navLogin.navigateFrag(LoginFragment(), false)
         }
 
         return view
